@@ -1,0 +1,46 @@
+basePath: /v1
+definitions:
+  user.AuthLogin:
+    properties:
+      email:
+        type: string
+      password:
+        type: string
+    required:
+    - email
+    - password
+    type: object
+host: localhost:8080
+info:
+  contact: {}
+  description: This is a sample server for a Go Clean Architecture Hexagonal API.
+  title: Go Clean Architecture Hexagonal API Documentation
+  version: 1.0.0
+paths:
+  /user/login:
+    post:
+      consumes:
+      - application/json
+      description: get string by ID
+      parameters:
+      - description: Login
+        in: body
+        name: AuthLogin
+        required: true
+        schema:
+          $ref: '#/definitions/user.AuthLogin'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/user.AuthLogin'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/user.AuthLogin'
+      summary: Show an account
+      tags:
+      - account
+swagger: "2.0"
