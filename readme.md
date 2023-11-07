@@ -6,6 +6,15 @@ In general is divided into 3 major parts, namely primary (driving adapter), busi
 - **Business**<br/>Contains all the logic in domain business. Also called this as a service. All the interface of repository needed and the implementation of the service itself will be put here.
 - **Secondary / driven adapter**<br/>Contains implementations of interfaces defined in the business such as databases, external APIs, clouds, and so on. (also called as server-side adapters in hexagonal's term)
 
+## Table of Contents
+- [Project Structure](#project-structure)
+- [Tech Stack](#tech-stack)
+- [File Structure](#file-structure)
+- [TL;DR](#tldr)
+- [Start From Scratch](#start-from-scratch)
+- [Coding Style](#coding-style)
+- [Useful References](#useful-references)
+
 ## Project Structure
 
 This project follows a clean architecture with the following main components:
