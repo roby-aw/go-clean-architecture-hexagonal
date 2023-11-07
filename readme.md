@@ -1,10 +1,18 @@
 # Go Clean Architecture Hexagonal Project
 
-This project implementation was inspired by port and adapter pattern or known as [hexagonal](https://content.octo.com/en/hexagonal-architecture-three-principles-and-an-implementation-example):
+This project implementation was inspired by port and adapter pattern or known as hexagonal:
 In general is divided into 3 major parts, namely primary (driving adapter), business, and secondary (driven adapter).
 - **Primary / driving adapter**<br/>driving adapter is a technology that we use to interact with users such as REST API, Graphql, gRPC, and so on. (also called user-side adapters in hexagonal's term)
 - **Business**<br/>Contains all the logic in domain business. Also called this as a service. All the interface of repository needed and the implementation of the service itself will be put here.
 - **Secondary / driven adapter**<br/>Contains implementations of interfaces defined in the business such as databases, external APIs, clouds, and so on. (also called as server-side adapters in hexagonal's term)
+
+## What is Clean Architecture?
+Clean Architecture is a software design philosophy that separates the elements of a design into ring levels. The main rule of clean architecture is that code dependencies can only come from the outer levels inward. Code on the inner layers can have no knowledge of functions on the outer layers. The more external a component is, the higher level of abstraction it must have.
+
+## Benefits of Clean Architecture Hexagonal
+- **Independent of Frameworks**<br/>The architecture does not depend on the existence of some library of feature laden software. This allows you to use such frameworks as tools, rather than having to cram your system into their limited constraints.
+- **Testable**<br/>The business rules can be tested without the UI, Database, Web Server, or any other external element.
+- **Maintainable**<br/>The Dependency Rule ensures that the coupling between components is always pointing inwards. This greatly reduces the risk of changing external code.
 
 ## Table of Contents
 - [Project Structure](#project-structure)
