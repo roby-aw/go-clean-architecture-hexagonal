@@ -6,6 +6,18 @@ In general is divided into 3 major parts, namely primary (driving adapter), busi
 - **Business**<br/>Contains all the logic in domain business. Also called this as a service. All the interface of repository needed and the implementation of the service itself will be put here.
 - **Secondary / driven adapter**<br/>Contains implementations of interfaces defined in the business such as databases, external APIs, clouds, and so on. (also called as server-side adapters in hexagonal's term)
 
+## Project Structure
+
+This project follows a clean architecture with the following main components:
+- `api/`: Contains the REST API implementation like middleware and routes.
+- `app/`: Contains the main application modules.
+- `business/`: It is the business/service layer of the application and all logic will be put here.
+- `config/`: Contains the configuration of the application for environment.
+- `docs/`: Contains the swagger documentation.
+- `repository/`: Contains the implementation of the interfaces defined in the business layer.
+- `utils/`: Contains the utility functions that can be used in the application.
+- `utils/driver/`: Contains the database connection.
+
 ## Tech Stack
 - Framework : Fiber
 - jose2go 
