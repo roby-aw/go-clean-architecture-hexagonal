@@ -94,7 +94,7 @@ This document will guide you some notices or warning usages, this will not teach
 ## Start From Scratch
 Please clone this repository to your computer and run the shell command (recommended):
 ```
-git clone https://github.com/github.com/roby-aw/go-clean-architecture-hexagonal.git
+git clone https://github.com/roby-aw/go-clean-architecture-hexagonal.git
 ```
 Downloading all of the modules in the dependency graph, which it can determine from reading only the go.mod files.:
 ```
